@@ -35,7 +35,7 @@ export default function Services() {
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="50"
-                      height="1e"
+                      height="50"
                       viewBox="0 0 24 24"
                     >
                       <g fill="none" stroke="currentColor" strokeWidth="1.5">
