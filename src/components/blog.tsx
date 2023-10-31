@@ -10,9 +10,7 @@ export default function Blog() {
             Especializados en el trabajo
           </h2>
           <p className="text-base leading-normal text-center text-gray-600 dark:text-white mt-4 lg:w-1/2 md:w-10/12 w-11/12">
-            Explora ideas innovadoras, consejos y tendencias en nuestro blog.
-            Descubre contenido fresco y valioso para inspirarte y mantenerte
-            actualizado.
+            Somos una empresa especializada en el desarrollo de software a la medida, con más de 5 años de experiencia en el mercado, contamos con un equipo de profesionales altamente capacitados para brindarle la mejor solución a su necesidad.
           </p>
         </div>
         <div className="lg:flex items-stretch md:mt-12 mt-8">
