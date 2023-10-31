@@ -21,7 +21,7 @@ export default function NavBar() {
     <Navbar className="p-6">
       <NavbarBrand>
         <Image
-          src={"/logojp.png "}
+          src="/logojp.png"
           alt="logo jp development"
           width={120}
           height={120}
