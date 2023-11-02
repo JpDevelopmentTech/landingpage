@@ -28,13 +28,13 @@ export default function NavBar() {
         />
       </NavbarBrand>
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem className="hidden md:flex">
           <Link href="/">Inicio</Link>
         </NavbarItem>
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem className="flex">
           <Link href="/blog">Blog</Link>
         </NavbarItem>
-        <NavbarItem className="hidden lg:flex cursor-pointer" onClick={e => handleScroll('services')}>
+        <NavbarItem className="hidden md:flex cursor-pointer" onClick={e => handleScroll('services')}>
           Servicios
         </NavbarItem>
         <NavbarItem>
