@@ -3,16 +3,7 @@ import Blog from "@/components/blog";
 import Clients from "@/components/clients/clients";
 import Contact from "@/components/contact/contact";
 import Services from "@/components/services";
-import { app } from "@/services/firebase";
-import { getAnalytics, logEvent } from "firebase/analytics";
-import { useEffect } from "react";
-
 export default function Home() {
-  const analytics = getAnalytics(app);
-  useEffect(() => {
-    logEvent(analytics, 'notification_received');
-  });
-
   return (
     <div className="relative">
       <header className="container mx-auto flex justify-center items-center py-32">
