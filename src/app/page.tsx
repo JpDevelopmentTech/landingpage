@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <div className="relative">
       <header className="container mx-auto flex justify-center items-center py-32">
-        <div className="flex flex-col gap-3 my-12 w-2/3 animate__animated animate__bounceInLeft">
-          <h1 className="font-black text-6xl text-center">
+        <div className="flex flex-col gap-3 my-12 md:w-2/3 animate__animated animate__bounceInLeft">
+          <h1 className="font-black text-3xl md:text-6xl text-center">
             Desarrollo de <span className="text-primary">software</span> y{" "}
             <span className="text-primary"> marketing digital </span>
           </h1>

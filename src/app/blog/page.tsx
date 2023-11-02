@@ -12,7 +12,7 @@ export default function Page() {
   return (
     <div className="container mx-auto flex flex-col justify-center items-center">
       <h1 className="text-center font-bold text-3xl my-12">Blog</h1>
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid md:grid-cols-4 gap-6">
         {articles?.map((article: Article) => (
           <div
             className="bg-white shadow-md border border-gray-200 rounded-lg  mb-5 flex flex-col"
@@ -34,10 +34,6 @@ export default function Page() {
                     {article.title}
                   </h5>
                 </a>
-                <p
-                  className="font-normal text-black mb-3 w-full overflow-ellipsis overflow-hidden h-12 whitespace-nowrap"
-                  dangerouslySetInnerHTML={{ __html: article.content }}
-                ></p>
               </div>
 
               <Link

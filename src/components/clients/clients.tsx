@@ -15,7 +15,7 @@ export default function Clients() {
           actualizado.
         </p>
       </div>
-      <div className="grid grid-cols-6 gap-12 place-items-center">
+      <div className="grid md:grid-cols-6 gap-12 place-items-center">
         {clients.map((client: { image: string }, index) => (
           <div key={index} className="flex items-center justify-center">
             <Image
