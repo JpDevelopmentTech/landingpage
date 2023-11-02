@@ -3,7 +3,15 @@ import Blog from "@/components/blog";
 import Clients from "@/components/clients/clients";
 import Contact from "@/components/contact/contact";
 import Services from "@/components/services";
+import { app } from "@/services/firebase";
+import { getAnalytics, logEvent } from "firebase/analytics";
+import { useEffect } from "react";
+
 export default function Home() {
+  const analytics = getAnalytics(app);
+  useEffect(() => {
+    logEvent(analytics, 'notification_received');
+  });
 
   return (
     <div className="relative">
@@ -33,8 +41,14 @@ export default function Home() {
           className="absolute bottom-3 right-3 bg-primary rounded-xl"
         >
           {/* icono en svg flecha hacia arriba */}
-          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24"><path fill="currentColor" d="m7 14l5-5l5 5H7Z"/></svg>
-            
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+          >
+            <path fill="currentColor" d="m7 14l5-5l5 5H7Z" />
+          </svg>
         </button>
       </div>
     </div>
