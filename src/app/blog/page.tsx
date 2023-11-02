@@ -4,7 +4,7 @@ import useGetArticles from "@/hooks/useGetArticles";
 import { Article } from "@/models/article";
 import Image from "next/image";
 import Link from "next/link";
-import React, { use, useEffect } from "react";
+import React from "react";
 
 export default function Page() {
   const articles = useGetArticles();

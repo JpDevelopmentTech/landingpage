@@ -1,5 +1,6 @@
 "use client";
-import useGetArticle from "@/hooks/usegetArticle";
+
+import useGetArticle from "@/hooks/useGetArticle";
 import Image from "next/image";
 
 

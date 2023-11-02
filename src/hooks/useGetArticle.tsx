@@ -1,5 +1,4 @@
-import { Article } from "@/models/article";
-import { getArticle, getArticles } from "@/services/blog";
+import { getArticle} from "@/services/blog";
 import { useEffect, useState } from "react";
 
 export default function useGetArticle({ id }: { id: string}) {

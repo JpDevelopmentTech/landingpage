@@ -1,4 +1,3 @@
-import { Article } from "@/models/article";
 import { getArticles } from "@/services/blog";
 import { useEffect, useState } from "react";
 
