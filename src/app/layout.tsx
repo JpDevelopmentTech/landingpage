@@ -1,5 +1,6 @@
 import NavBar from "@/components/navbar";
 import "./globals.css";
+import 'animate.css';
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer";

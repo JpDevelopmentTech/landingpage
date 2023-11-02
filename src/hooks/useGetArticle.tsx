@@ -1,17 +1,18 @@
 import { Article } from "@/models/article";
+import { getArticle, getArticles } from "@/services/blog";
 import { useEffect, useState } from "react";
-import articles from '@/data/articles.json'
 
-export default function useGetArticle({ slug }: { slug: string }) {
-
-  const [article, setarticle] = useState<Article>();
+export default function useGetArticle({ id }: { id: string}) {
+  const [article, setArticle] = useState<any>();
 
   useEffect(() => {
-    const articleFind = articles.find(article => article.slug === slug) 
-    setarticle(articleFind);
-  }, [slug])
+    async function fetchArticle() {
+      const response = await getArticle(id);
+      setArticle(response);
+    }
 
+    fetchArticle();
+  }, [id]);
 
-
-  return {article};
+  return article;
 }

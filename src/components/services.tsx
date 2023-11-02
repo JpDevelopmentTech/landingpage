@@ -26,7 +26,7 @@ export default function Services() {
             <Card
               key={service.id}
               isBlurred
-              className="border-none bg-background/60 dark:bg-default-100/50 max-w-[610px]"
+              className="border-none bg-background/60 dark:bg-default-100/50 max-w-[610px] animate__animated animate__jackInTheBox"
               shadow="sm"
             >
               <CardBody>

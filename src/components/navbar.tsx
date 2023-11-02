@@ -31,6 +31,9 @@ export default function NavBar() {
         <NavbarItem className="hidden lg:flex">
           <Link href="/">Inicio</Link>
         </NavbarItem>
+        <NavbarItem className="hidden lg:flex">
+          <Link href="/blog">Blog</Link>
+        </NavbarItem>
         <NavbarItem className="hidden lg:flex cursor-pointer" onClick={e => handleScroll('services')}>
           Servicios
         </NavbarItem>
