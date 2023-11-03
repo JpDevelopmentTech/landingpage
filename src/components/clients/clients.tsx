@@ -10,9 +10,7 @@ export default function Clients() {
           Clientes
         </h1>
         <p className="text-base leading-normal text-center text-gray-600 dark:text-white mt-4 lg:w-1/2 md:w-10/12 w-11/12">
-          Explora ideas innovadoras, consejos y tendencias en nuestro blog.
-          Descubre contenido fresco y valioso para inspirarte y mantenerte
-          actualizado.
+          Estos son los clientes que han confiado en nosotros para el desarrollo de sus proyectos. 
         </p>
       </div>
       <div className="grid md:grid-cols-6 gap-12 place-items-center">

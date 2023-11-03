@@ -1,5 +1,6 @@
 "use client";
 
+import LoadingSpinner from "@/components/loading/loading";
 import useGetArticles from "@/hooks/useGetArticles";
 import { Article } from "@/models/article";
 import Image from "next/image";
@@ -12,6 +13,7 @@ export default function Page() {
   return (
     <div className="container mx-auto flex flex-col justify-center items-center">
       <h1 className="text-center font-bold text-3xl my-12">Blog</h1>
+      {articles == null && <LoadingSpinner text="Cargando articulos"></LoadingSpinner>}
       <div className="grid md:grid-cols-4 gap-6">
         {articles?.map((article: Article) => (
           <div
