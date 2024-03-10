@@ -14,8 +14,8 @@ export default function Clients() {
         </p>
       </div>
       <div className="grid md:grid-cols-6 gap-12 place-items-center">
-        {clients.map((client: { image: string }, index) => (
-          <div key={index} className="flex items-center justify-center">
+        {clients.map((client, index) => (
+          <a href={client.url}  key={index} className="flex items-center justify-center" target="_blank">
             <Image
               src={client.image}
               alt="jp development client"
@@ -23,7 +23,7 @@ export default function Clients() {
               height={120}
               className="object-contain"
             />
-          </div>
+          </a>
         ))}
       </div>
     </section>

@@ -1,50 +1,81 @@
 [
     {
-        "image": "/assets/images/clients/client1.png"
+        "image": "/assets/images/clients/client1.png",
+        "url": "https://acordeononline.com/",
+        "alt": "Acordeon Online imagen"
     },
     {
-        "image": "/assets/images/clients/client2.png"
+        "image": "/assets/images/clients/client2.png",
+        "url": "http://noramed.io/",
+        "alt": "Noramed imagen"
     },
     {
-        "image": "/assets/images/clients/client3.png"
+        "image": "/assets/images/clients/client3.png",
+        "url" : "https://www.montesinai.edu.co/",
+        "alt": "Monte Sinai imagen"
+
     },
     {
-        "image": "/assets/images/clients/client4.png"
+        "image": "/assets/images/clients/client4.png",
+        "url": "https://botesdelabahia.com/",
+        "alt": "Botes de la Bahia imagen"
     },
     {
-        "image": "/assets/images/clients/client5.png"
+        "image": "/assets/images/clients/client5.png",
+        "url": "https://islabela.co/",
+        "alt": "Islabela imagen"
     },
     {
-        "image": "/assets/images/clients/client6.png"
+        "image": "/assets/images/clients/client6.png",
+        "url": "https://karenmartello.com/",
+        "alt": "Karen Martello imagen"
     },
     {
-        "image": "/assets/images/clients/client7.png"
+        "image": "/assets/images/clients/client7.png",
+        "url" : "https://www.corgestacol.com/",
+        "alt": "Corgestacol imagen"
     },
     {
-        "image": "/assets/images/clients/client8.png"
+        "image": "/assets/images/clients/client8.png",
+        "url": "https://www.velbet.co/",
+        "alt": "Velbet imagen"
     },
     {
-        "image": "/assets/images/clients/client9.png"
+        "image": "/assets/images/clients/client9.png",
+        "url" : "https://elrincondelosabrazos.com/",
+        "alt": "El Rincon de los Abrazos imagen"
     },
     {
         "image": "/assets/images/clients/client10.png"
+        
     },
     {
-        "image": "/assets/images/clients/client11.png"
+        "image": "/assets/images/clients/client11.png",
+        "url" : "https://www.pidoocolombia.com/",
+        "alt": "Pidoo Colombia imagen"
     },
     {
-        "image": "/assets/images/clients/client12.png"
+        "image": "/assets/images/clients/client12.png",
+        "url": "https://vaalexclusive.com/",
+        "alt": "Vaal Exclusive imagen"
+
     },
     {
-        "image" : "/assets/images/clients/client13.png"
+        "image" : "/assets/images/clients/client13.png",
+        "url": "https://www.discolsas.com/",
+        "alt": "Discol sas imagen"
     },
     {
         "image" : "/assets/images/clients/client14.png"
     },
     {
-        "image" : "/assets/images/clients/client15.jpg"
+        "image" : "/assets/images/clients/client15.jpg",
+        "url": "https://mediocomercial.com/",
+        "alt": "Medio Comercial imagen"
     },
     {
-        "image" : "/assets/images/clients/client16.png"
+        "image" : "/assets/images/clients/client16.png",
+        "url": "https://www.sendmeexpress.com/",
+        "alt": "Send Me Express imagen"
     }
 ]
