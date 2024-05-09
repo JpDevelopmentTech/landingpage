@@ -29,7 +29,7 @@ export default function Contact() {
 
   return (
     <div
-      className="2xl:mx-auto 2xl:container lg:px-20 lg:py-16 md:py-12 md:px-6 py-12 px-4 w-96 sm:w-auto h-screen flex items-center justify-center flex-col"
+      className="my-36"
       id="contact"
     >
       {message && (
@@ -40,7 +40,7 @@ export default function Contact() {
         </div>
       )}
       <div role="main" className="flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-semibold leading-9 text-center text-gray-800 dark:text-gray-50">
+        <h2 className="text-4xl md:text-6xl font-black leading-9 text-center text-primary">
           Contactanos
         </h2>
         <p className="text-base leading-normal text-center text-gray-600 dark:text-white mt-4 lg:w-1/2 md:w-10/12 w-11/12">
@@ -48,7 +48,7 @@ export default function Contact() {
         </p>
       </div>
       <div className="w-full flex justify-center items-center">
-        <form className="w-2/3 py-12 flex flex-col gap-6" onSubmit={sendForm}>
+        <form className="w-full md:w-1/2  py-12 flex flex-col gap-6" onSubmit={sendForm}>
           <input
             type="text"
             className="border-b bg-transparent text-white p-3 focus-visible:outline-none w-full"

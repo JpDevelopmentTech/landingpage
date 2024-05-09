@@ -6,14 +6,14 @@ export default function Clients() {
   return (
     <section className="mx-auto container">
       <div role="main" className="flex flex-col items-center justify-center mb-12">
-        <h1 className="text-4xl font-semibold leading-9 text-center text-gray-800 dark:text-gray-50">
+        <h1 className="text-6xl font-black leading-9 text-center text-primary">
           Clientes
         </h1>
         <p className="text-base leading-normal text-center text-gray-600 dark:text-white mt-4 lg:w-1/2 md:w-10/12 w-11/12">
           Estos son los clientes que han confiado en nosotros para el desarrollo de sus proyectos. 
         </p>
       </div>
-      <div className="grid md:grid-cols-6 gap-12 place-items-center">
+      <div className="grid grid-cols-2 md:grid-cols-6 gap-12 place-items-center">
         {clients.map((client, index) => (
           <a href={client.url}  key={index} className="flex items-center justify-center" target="_blank">
             <Image
