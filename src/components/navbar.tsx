@@ -38,7 +38,7 @@ export default function NavBar() {
           Servicios
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} href="#"  variant="flat" onClick={e => handleScroll('contact')} className="bg-primary-200">
+          <Button as={Link} href="#"  variant="flat" onClick={e => handleScroll('contact')} className="bg-primary">
             Contactar
           </Button>
         </NavbarItem>

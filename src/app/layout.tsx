@@ -6,6 +6,7 @@ import { Inter } from "next/font/google";
 import Footer from "@/components/footer";
 import { Providers } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
+import { Analytics } from "@vercel/analytics/react"
 
 
 
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={inter.className}>
+        <Analytics />
         <Providers>
           <NavBar />
           {children}

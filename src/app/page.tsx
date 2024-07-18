@@ -5,6 +5,7 @@ import Contact from "@/components/contact/contact";
 import Services from "@/components/services";
 import Testimonials from "@/components/testimonials/testimonials";
 import Buttonup from "@/components/buttonUp/buttonup";
+import Blog from "@/components/blog/blog";
 export default function Home() {
 
 
@@ -29,6 +30,7 @@ export default function Home() {
       <Services />
       <Portfolio />
       <Testimonials />
+      <Blog />
       <Clients />
       <Contact />
       <Buttonup />
