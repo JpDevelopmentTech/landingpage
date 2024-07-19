@@ -3,172 +3,63 @@ import React from "react";
 
 export default function PortFolio() {
   return (
-    <div id="blog">
-      <div className="">
-        <div role="main" className="flex flex-col items-center justify-center">
-          <h2 className="text-4xl md:text-6xl font-black leading-9 text-center text-primary w-full">
-            Especializados en el trabajo
-          </h2>
-          <p className="text-base leading-normal text-center text-gray-600 dark:text-white mt-4 lg:w-1/2 md:w-10/12 w-11/12">
-            Somos una empresa especializada en el desarrollo de software a la
-            medida, con más de 5 años de experiencia en el mercado, contamos con
-            un equipo de profesionales altamente capacitados para brindarle la
-            mejor solución a su necesidad.
-          </p>
-        </div>
-        <div className="container mx-auto my-24 flex flex-col gap-10">
-          <div className="flex flex-col  md:flex-row items-center gap-10 justify-center w-full">
-            <div className="flex items-center ">
-              <Image
-                src="/assets/images/portfolio/portfolio7.png"
-                width={1080}
-                height={1920}
-                alt="App desarrollada por JpDevelopment"
-                className="w-64 z-20"
-              ></Image>
-              <Image
-                src="/assets/images/portfolio/portfolio7p.png"
-                width={1920}
-                height={1080}
-                alt="App desarrollada por JpDevelopment"
-                className="w-[200px] md:w-[600px] -ml-36 z-10"
-              ></Image>
-            </div>
-            <div className=" z-10 md:ml-10">
-              <h3 className="text-2xl font-bold text-primary">VelbetApp</h3>
-              <h4 className="text-lg font-bold">Desarrollo a la medida</h4>
-              <p className="text-xl mt-3 max-w-2xl">
-                Una aplicacion realizada para la solicitud de cualquier tipo de
-                servicios, administracion de coopropiedades, y estados de cuenta para clientes,todo totalmente Serverless
-              </p>
-              <div className="mt-3 flex flex-wrap gap-3">
-                <span
-                  className="
-                bg-primary px-10 py-2 text-white rounded-full text-sm
-                "
-                >
-                  Firebase
-                </span>
-                <span
-                  className="
-                bg-primary px-10 py-2 text-white rounded-full text-sm
-                "
-                >
-                  NodeJS
-                </span>
-                <span
-                  className="
-                bg-primary px-10 py-2 text-white rounded-full text-sm
-                "
-                >
-                  ReactJS
-                </span>
-                <span
-                  className="
-                bg-primary px-10 py-2 text-white rounded-full text-sm
-                "
-                >
-                  Amazon web services
-                </span>
-              </div>
+    <div className="bg-black" id="works">
+      <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+        <div className="relative isolate overflow-hidden bg-black px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+          <svg
+            viewBox="0 0 1024 1024"
+            aria-hidden="true"
+            className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+          >
+            <circle
+              r={512}
+              cx={512}
+              cy={512}
+              fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+              fillOpacity="0.7"
+            />
+            <defs>
+              <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                <stop stopColor="#38B6FF" />
+                <stop offset={1} stopColor="#38B6FF" />
+              </radialGradient>
+            </defs>
+          </svg>
+          <div className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              El mejor software para tu empresa
+              <br />
+              <span className="text-primary">en un solo lugar</span>
+              
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-300">
+              En nuestra empresa estamos enfocados en la ayuda y satisfaccion de
+              todos nuestros clientes con soluciones adaptadas a cada una de sus
+              necesidades
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+              <a
+                href="#"
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+              >
+                Empezar
+              </a>
+              <a
+                href="#"
+                className="text-sm font-semibold leading-6 text-white"
+              >
+                Aprende mas <span aria-hidden="true">→</span>
+              </a>
             </div>
           </div>
-          <div className="flex flex-col-reverse md:flex-row items-center gap-10 justify-center w-full">
-            
-            <div className=" z-10 md:ml-10">
-              <h3 className="text-2xl font-bold text-primary md:text-right">Tu Candela Miami</h3>
-              <h4 className="text-lg font-bold md:text-right">Sitio web</h4>
-              <p className="text-xl mt-3 md:text-right max-w-2xl">
-                Una pagina web para la reservacion de mesas de una discoteca en miami e informacion de eventos
-              </p>
-              <div className="mt-3 flex flex-wrap gap-3 md:justify-end">
-                <span
-                  className="
-                bg-primary px-10 py-2 text-white rounded-full text-sm
-                "
-                >
-                  Wordpress
-                </span>
-              </div>
-            </div>
-            <div className="flex items-center ">
-              <Image
-                src="/assets/images/portfolio/portfolio1.png"
-                width={1080}
-                height={1920}
-                alt="App desarrollada por JpDevelopment"
-                className="w-64 z-20"
-              ></Image>
-              <Image
-                src="/assets/images/portfolio/portfolio1p.png"
-                width={1920}
-                height={1080}
-                alt="App desarrollada por JpDevelopment"
-                className="w-[200px] md:w-[600px] -ml-36 z-10"
-              ></Image>
-            </div>
-          </div>
-          <div className="flex flex-col md:flex-row items-center gap-10 justify-center w-full">
-            <div className="flex items-center ">
-              <Image
-                src="/assets/images/portfolio/portfolio7.png"
-                width={1080}
-                height={1920}
-                alt="App desarrollada por JpDevelopment"
-                className="w-64 z-20"
-              ></Image>
-              <Image
-                src="/assets/images/portfolio/portfolio2p.png"
-                width={1920}
-                height={1080}
-                alt="App desarrollada por JpDevelopment"
-                className="w-[200px] md:w-[600px] -ml-36 z-10"
-              ></Image>
-            </div>
-            <div className=" z-10 md:ml-10">
-              <h3 className="text-2xl font-bold text-primary">Discol Movilidad</h3>
-              <h4 className="text-lg font-bold">Desarrollo a la medida</h4>
-              <p className="text-xl mt-3 max-w-2xl">
-                Una plataforma empresarial para la gestion de cobros de cartera, gestion de clientes y reportes de ventas
-              </p>
-              <div className="mt-3 flex flex-wrap gap-3">
-                <span
-                  className="
-                bg-primary px-10 py-2 text-white rounded-full text-sm
-                "
-                >
-                  ReactJs
-                </span>
-                <span
-                  className="
-                bg-primary px-10 py-2 text-white rounded-full text-sm
-                "
-                >
-                  Flutter
-                </span>
-                <span
-                  className="
-                bg-primary px-10 py-2 text-white rounded-full text-sm
-                "
-                >
-                  NodeJS
-                </span>
-                <span
-                  className="
-                bg-primary px-10 py-2 text-white rounded-full text-sm
-                "
-                >
-                  Amazon web services
-                </span>
-                <span
-                  className="
-                bg-primary px-10 py-2 text-white rounded-full text-sm
-                "
-                >
-                  MongoDB
-                </span>
-              </div>
-            </div>
+          <div className="relative mt-16 h-80 lg:mt-8">
+            <img
+              alt="App screenshot"
+              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+              width={1824}
+              height={1080}
+              className="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+            />
           </div>
         </div>
       </div>

@@ -1,14 +1,12 @@
 import NavBar from "@/components/navbar";
 import "./globals.css";
-import 'animate.css';
+import "animate.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Footer from "@/components/footer";
 import { Providers } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
-import { Analytics } from "@vercel/analytics/react"
-
-
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Jp Development | Desarrollo de Software",
@@ -21,7 +19,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
   return (
     <html lang="en" className="dark">
       <body className={inter.className}>

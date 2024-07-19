@@ -1,31 +1,28 @@
 import React from "react";
 import clients from "../../data/clients.json";
+import "./clients.css";
 import Image from "next/image";
-import './clients.css'
 export default function Clients() {
   return (
-    <section className="mx-auto container">
-      <div role="main" className="flex flex-col items-center justify-center mb-12">
-        <h1 className="text-6xl font-black leading-9 text-center text-primary">
-          Clientes
-        </h1>
-        <p className="text-base leading-normal text-center text-gray-600 dark:text-white mt-4 lg:w-1/2 md:w-10/12 w-11/12">
-          Estos son los clientes que han confiado en nosotros para el desarrollo de sus proyectos. 
-        </p>
+    <div className="bg-black py-24 sm:py-32">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <h2 className="text-center text-lg font-semibold leading-8 text-primary">
+          Empresas que confían en nosotros
+        </h2>
+        <div className="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+          {clients.map((client, index) => (
+            <a href={client.url} key={index}>
+              <Image
+                alt={client.alt || ''}
+                src={client.image}
+                width={158}
+                height={48}
+                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1 grayscale"
+              />
+            </a>
+          ))}
+        </div>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-6 gap-12 place-items-center">
-        {clients.map((client, index) => (
-          <a href={client.url}  key={index} className="flex items-center justify-center" target="_blank">
-            <Image
-              src={client.image}
-              alt="jp development client"
-              width={120}
-              height={120}
-              className="object-contain"
-            />
-          </a>
-        ))}
-      </div>
-    </section>
+    </div>
   );
 }
